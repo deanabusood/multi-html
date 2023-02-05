@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  background-color: rgb(10, 25, 47);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 100vw;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+#intro_image {
+  height: 500px;
+  width: auto;
+}
+
+#intro_links {
+  display: flex;
+  gap: 20px;
+
+  position: relative;
+}
+
+h1,
+p {
+  color: rgb(204 214 246);
+}
+
+img {
+  height: 30px;
+  width: auto;
+  color: white;
+}
