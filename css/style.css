@@ -9,9 +9,10 @@
 
 html {
   background-color: rgb(10, 25, 47);
+  font-family: "Inconsolata", monospace;
 }
 
-.container {
+#index-container {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -25,8 +26,10 @@ html {
 
 h1,
 p,
-.link-text {
+.link-text,
+li {
   color: rgb(204 214 246);
+  /* color: #8892b0; */
 }
 
 #intro-image {
@@ -34,8 +37,7 @@ p,
   width: auto;
 }
 
-#intro-links,
-#about-links {
+#intro-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,7 +51,36 @@ p,
   gap: 5px;
 }
 
-img {
-  height: 30px;
-  width: auto;
+#about-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+  padding: 50px;
+}
+
+#about-container p {
+  align-items: flex-start;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+#about-links {
+}
+.technologies-section {
+  max-width: 600px;
+}
+
+.technologies-list {
+  display: flex;
+  flex-direction: row;
+
+  margin: 10px 0px 0px 20px;
+  gap: 100px;
+  font-size: 18px;
+}
+
+.technologies-list li {
+  list-style-image: url(/img/icon-chevron-right.svg);
+  margin: 10px 0;
 }
