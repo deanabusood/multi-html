@@ -11,10 +11,10 @@ html {
   background-color: rgb(10, 25, 47);
 }
 
-#container {
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 
   min-width: 100vw;
@@ -23,23 +23,31 @@ html {
   gap: 40px;
 }
 
-h1, p {
+h1,
+p,
+.link-text {
   color: rgb(204 214 246);
 }
 
-#intro_image {
+#intro-image {
   height: 500px;
   width: auto;
 }
 
-#intro_links {
+#intro-links,
+#about-links {
   display: flex;
-  gap: 300px; /* temp set */
+  flex-direction: row;
+  justify-content: center;
 
-  position: relative;
+  gap: 250px;
 }
 
-
+.link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
 img {
   height: 30px;

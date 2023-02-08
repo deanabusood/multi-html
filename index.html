@@ -9,34 +9,32 @@
   </head>
   <body>
     <!-- ! name, image/gif, two links (github and about.html) -->
-    <div id="container">
-      <div id="intro_name">
+    <div class="container">
+      <!-- introduction -->
+      <div id="intro-name">
         <h1>hello, i'm dean.</h1>
       </div>
-
+      <!-- image/gif -->
       <div>
         <img
           src="https://media3.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif?cid=ecf05e47564use70u1pivub0b5p583wz2oadif8p6vqo9mph&rid=giphy.gif&ct=g"
           alt="A computer gif!"
-          id="intro_image"
+          id="intro-image"
         />
       </div>
-
-      <div id="intro_links">
-        <div id="github_link">
-          <p>
-            <a target="_blank" href="https://github.com/deanabusood"
-              ><img src="./img/icon-github.svg" alt="Github logo"
-            /></a>
-            My Github
-          </p>
+      <!-- links to github and about page -->
+      <div id="intro-links">
+        <div class="link">
+          <a target="_blank" href="https://github.com/deanabusood"
+            ><img src="./img/icon-github.svg" alt="Github logo"
+          /></a>
+          <div class="link-text">My Github</div>
         </div>
-        <div id="about_link">
-          <p>About me
+        <div class="link">
+          <div class="link-text">About me</div>
           <a href="about.html"
             ><img src="./img/icon-arrow-right.svg" alt="About me!"
           /></a>
-        </p>
         </div>
       </div>
     </div>
